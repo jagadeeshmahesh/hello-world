@@ -13,6 +13,7 @@ node{
      sh "${mvnCMD} clean test"
    }
    stage('Build Docker Image'){
+     sh 'sudo su'
      sh 'docker build -t jagadeesh1355/testing:1.0.0 .'
    }
  
