@@ -12,7 +12,7 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean test"
    }
-   stage('Maven test'){
+   stage('Maven build'){
      def mvnHome = tool name: 'M2_HOME', type: 'maven'
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
