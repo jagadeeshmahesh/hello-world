@@ -12,5 +12,13 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean test"
    }
+   stage('Maven build'){
+     def mvnHome = tool name: 'M2_HOME', type: 'maven'
+     def mvnCMD = "${mvnHome}/bin/mvn"
+     sh "${mvnCMD} clean package"
+   }
+   stage('Build Docker Image'){
+      sh 'docker build -t jagadeesh1355/testing:2.0.0 .'
+   }
  
  }
