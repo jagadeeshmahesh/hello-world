@@ -1,5 +1,5 @@
 FROM tomcat:latest
-USER root
+USER ec2-user
 MAINTAINER jagadeesh
 RUN apt-get update && apt-get -y upgrade
 WORKDIR /usr/local/tomcat
