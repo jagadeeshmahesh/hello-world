@@ -17,6 +17,16 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
    }
+  stage('Build Docker Image'){
+      sh 'docker build -t jagadeesh1355/testing:4.0.0 .'
+   }
+  stage ('pushing Registery'){
+    withCredentials([string(credentialsId: 'jaggu', variable: 'jaggu')]) {
+      sh 'docker login -u jagadeesh1355 -p ${jaggu}
+    }
+    sh 'docker push jagadeesh1355/testing:4.0.0
+   }
+   
  
  
  }
