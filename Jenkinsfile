@@ -17,8 +17,8 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
    }
-   stage('Build Docker Image'){
-      sh 'docker build -t jagadeesh1355/testing:1.0.0 .'
-   }
+  // stage('Build Docker Image'){
+    //  sh 'docker build -t jagadeesh1355/testing:1.0.0 .'
+   //}
  
  }
