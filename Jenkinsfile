@@ -17,6 +17,9 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
    }
+  stage('copywar'){
+    sh 'copy webapp.war stat /var/lib/docker/tmp/docker-builder345913791/'
+  }
    stage('Build Docker Image'){
       sh 'docker build -t jagadeesh1355/testing:2.0.0 .'
    }
