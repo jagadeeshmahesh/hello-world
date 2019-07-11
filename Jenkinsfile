@@ -18,7 +18,7 @@ node{
      sh "${mvnCMD} clean package"
    }
    stage('Build Docker Image'){
-      sh 'docker build -t jagadeesh1355/testing:2.0.0 .'
+      sh 'docker build -t jagadeesh1355/testing:3.0.0 .'
    }
  
  }
