@@ -1,4 +1,5 @@
 FROM tomcat
+USER root
 MAINTAINER jagadeesh
 RUN apt-get update && apt-get -y upgrade
 WORKDIR /usr/local/tomcat
