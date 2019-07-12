@@ -1,9 +1,6 @@
 node{
   stage('scm Checkout'){
-    when {
-       branch 'pushtodocker'
-      }
-    git 'https://github.com/jagadeeshmahesh/hello-world.git'
+    git('https://github.com/jagadeeshmahesh/hello-world.git',branch: 'pushtodocker')
   }
   stage('Maven compile'){
      def mvnHome = tool name: 'M2_HOME', type: 'maven'
