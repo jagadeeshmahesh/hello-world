@@ -17,6 +17,6 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
    }
- 
+     sh 'date "+%d-%m-%Y" '
  
  }
