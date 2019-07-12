@@ -1,5 +1,8 @@
 node{
   stage('scm Checkout'){
+    when {
+       branch 'pushtodocker'
+      }
     git 'https://github.com/jagadeeshmahesh/hello-world.git'
   }
   stage('Maven compile'){
