@@ -18,16 +18,7 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} clean package"
    }
-  stage('Build Docker Image'){
-      sh 'docker build -t jagadeesh1355/testing:3.0.0 .'
-   }
-    stage ('pushing'){
-    withCredentials([string(credentialsId: 'jaggus', variable: 'jaggus')]) {
-     sh "docker login -u jagadeesh1355 -p ${jaggus}"
-     }
-     
-    sh 'docker push jagadeesh1355/testing:3.0.0'
-   }
+  
    sh 'date "+%d-%m-%Y" '
 }
      
