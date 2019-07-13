@@ -16,7 +16,7 @@ node{
   stage('Maven test'){
      def mvnHome = tool name: 'M2_HOME', type: 'maven'
      def mvnCMD = "${mvnHome}/bin/mvn"
-     sh "${mvnCMD} clean package"
+     sh "${mvnCMD} deploy"
    }
   
    sh 'date "+%d-%m-%Y" '
