@@ -216,17 +216,5 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
-  <distributionManagement>
-  <repository>
-    <id>deploy</id>
-    <name>war</name>
-    <url>http://13.233.204.252:8081/nexus/content/repositories/war1/</url>
-  </repository>
-  <snapshotRepository>
-    <id>deploy</id>
-     <name>warsnap</name>
-    <url>http://13.233.204.252:8081/nexus/content/repositories/warsnap/</url>
-  </snapshotRepository>
-</distributionManagement>
-
+ 
 </project>
