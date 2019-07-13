@@ -23,9 +23,9 @@
 
   <distributionManagement>
     <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
+      <id>deploy</id>
+      <name>Test war</name>
+      <url>http://13.233.204.252:8081/nexus/content/repositories/war1/</url>
     </site>
   </distributionManagement>
 
