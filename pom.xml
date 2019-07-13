@@ -22,11 +22,11 @@
   </modules>
 
   <distributionManagement>
-    <site>
+    <repository>
       <id>deploy</id>
       <name>Test war</name>
       <url>http://13.233.204.252:8081/nexus/content/repositories/war1/</url>
-    </site>
+    </repository>
   </distributionManagement>
 
   <build>
