@@ -27,11 +27,11 @@
       <name>Test war</name>
       <url>http://13.233.204.252:8081/nexus/content/repositories/war1/</url>
     </repository>
-    <repository>
+    <snapshotRepository>
       <id>deploy</id>
       <name>snapwar</name>
       <url>http://13.233.204.252:8081/nexus/content/repositories/warsnap/</url>
-    </repository>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
