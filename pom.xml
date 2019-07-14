@@ -25,12 +25,12 @@
     <repository>
       <id>deploy</id>
       <name>Test war</name>
-      <url>http://13.126.21.76:8081/nexus/content/repositories/war1/</url>
+      <url>http://13.233.124.215:8081/nexus/content/repositories/war1/</url>
     </repository>
     <snapshotRepository>
       <id>deploy</id>
       <name>snapwar</name>
-      <url>http://13.126.21.76:8081/nexus/content/repositories/warsnap/</url>
+      <url>http://13.233.124.215:8081/nexus/content/repositories/warsnap/</url>
     </snapshotRepository>
   </distributionManagement>
 
