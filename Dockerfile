@@ -1,4 +1,4 @@
-FROM tomcat:latest
+FROM tomcat:8.0.20-jre8
 MAINTAINER jagadeesh
 #COPY webapp.war /usr/local/tomcat/webapps
 RUN apt-get update && apt-get -y upgrade
