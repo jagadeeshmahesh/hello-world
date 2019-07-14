@@ -3,7 +3,7 @@ MAINTAINER jagadeesh
 #COPY webapp.war /usr/local/tomcat/webapps
 #RUN apt-get update && apt-get -y upgrade
 #WORKDIR /usr/local/tomcat
-ADD http://13.233.124.215:8081/nexus/content/repositories/warsnap/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-20190713.075731-1.war /usr/local/tomcat/webapps/
+ADD http://13.233.124.215:8081/nexus/content/repositories/warsnap/com/example/maven-project/webapp/1.0-SNAPSHOT/webapp-1.0-20190714.162339-14.war /usr/local/tomcat/webapps/
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 #COPY ./demo_pushtodocker/webapp/target/webapp.war /usr/local/tomcat/webapps/
 #RUN /bin/sh -c cp ./webapp.war /usr/local/tomcat/webapps/
