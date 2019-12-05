@@ -13,12 +13,12 @@ node{
      def mvnCMD = "${mvnHome}/bin/mvn"
      sh "${mvnCMD} test"
    }
-     //stage('Maven build'){
-     //def mvnHome = tool name: 'M2_HOME', type: 'maven'
-     //def mvnCMD = "${mvnHome}/bin/mvn"
-     //sh "${mvnCMD} package"
-  // }
-    
+     stage('Maven build'){
+     def mvnHome = tool name: 'M2_HOME', type: 'maven'
+     def mvnCMD = "${mvnHome}/bin/mvn"
+     sh "${mvnCMD} package"
+  }
+    /*
   stage('Maven Deploy to nexus'){
      def mvnHome = tool name: 'M2_HOME', type: 'maven'
      def mvnCMD = "${mvnHome}/bin/mvn"
@@ -42,7 +42,7 @@ node{
    
 }
    sh 'date "+%d-%m-%Y" '
-}
+} */
      
  
  
