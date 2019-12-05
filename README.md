@@ -1,2 +1,2 @@
-App starting ....
+App starting
 
